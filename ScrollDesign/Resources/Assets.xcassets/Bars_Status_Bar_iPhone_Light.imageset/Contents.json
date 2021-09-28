@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Bars_Status_Bar_iPhone_Light.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Bars_Status_Bar_iPhone_Light@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Bars_Status_Bar_iPhone_Light@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

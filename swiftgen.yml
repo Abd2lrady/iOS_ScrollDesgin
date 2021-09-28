@@ -1,0 +1,6 @@
+xcassets:
+  - inputs: ScrollDesign/Resources/
+    outputs:
+      - templateName: swift5
+        output: ScrollDesign/Resources/Assets.swift
+
