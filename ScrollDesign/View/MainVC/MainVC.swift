@@ -10,6 +10,7 @@ import UIKit
 class MainVC: UIViewController {
     
     @IBOutlet private weak var checkOutBtn: UIButton!
+    @IBOutlet weak var profileHeader: ProfileHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -18,6 +19,9 @@ class MainVC: UIViewController {
         super.viewWillLayoutSubviews()
         configNavBarUI()
         checkOutBtn.setCornerRadius = 20
+        profileHeader.setCorners(with: 20,
+                                 corners: [.layerMinXMinYCorner,
+                                           .layerMaxXMinYCorner])
     }
    
     func configNavBarUI() {

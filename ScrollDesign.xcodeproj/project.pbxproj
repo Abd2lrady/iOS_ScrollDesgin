@@ -15,7 +15,9 @@
 		B4BEA72C27033A2A00A26068 /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4BEA72B27033A2A00A26068 /* MainVC.xib */; };
 		B4BEA73127033D3E00A26068 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEA73027033D3E00A26068 /* Assets.swift */; };
 		B4BEA734270366F100A26068 /* NavigationBarButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BEA733270366F100A26068 /* NavigationBarButtons.swift */; };
-		B4F687EE27042F43007F3E12 /* Layer+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F687ED27042F43007F3E12 /* Layer+.swift */; };
+		B4F687EE27042F43007F3E12 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F687ED27042F43007F3E12 /* UIView+.swift */; };
+		B4F687F027048448007F3E12 /* ProfileHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4F687EF27048448007F3E12 /* ProfileHeader.xib */; };
+		B4F687F22704846F007F3E12 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F687F12704846F007F3E12 /* ProfileHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +31,9 @@
 		B4BEA72B27033A2A00A26068 /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
 		B4BEA73027033D3E00A26068 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		B4BEA733270366F100A26068 /* NavigationBarButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarButtons.swift; sourceTree = "<group>"; };
-		B4F687ED27042F43007F3E12 /* Layer+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Layer+.swift"; sourceTree = "<group>"; };
+		B4F687ED27042F43007F3E12 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		B4F687EF27048448007F3E12 /* ProfileHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileHeader.xib; sourceTree = "<group>"; };
+		B4F687F12704846F007F3E12 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +97,8 @@
 		B4BEA72A270339C600A26068 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B4BEA7182703397500A26068 /* MainVC.swift */,
-				B4BEA72B27033A2A00A26068 /* MainVC.xib */,
+				B4F687F4270489C0007F3E12 /* MainVC */,
+				B4F687F3270489AE007F3E12 /* ProfileHeader */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -103,9 +107,27 @@
 			isa = PBXGroup;
 			children = (
 				B4BEA733270366F100A26068 /* NavigationBarButtons.swift */,
-				B4F687ED27042F43007F3E12 /* Layer+.swift */,
+				B4F687ED27042F43007F3E12 /* UIView+.swift */,
 			);
 			path = Extentions;
+			sourceTree = "<group>";
+		};
+		B4F687F3270489AE007F3E12 /* ProfileHeader */ = {
+			isa = PBXGroup;
+			children = (
+				B4F687EF27048448007F3E12 /* ProfileHeader.xib */,
+				B4F687F12704846F007F3E12 /* ProfileHeader.swift */,
+			);
+			path = ProfileHeader;
+			sourceTree = "<group>";
+		};
+		B4F687F4270489C0007F3E12 /* MainVC */ = {
+			isa = PBXGroup;
+			children = (
+				B4BEA7182703397500A26068 /* MainVC.swift */,
+				B4BEA72B27033A2A00A26068 /* MainVC.xib */,
+			);
+			path = MainVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +189,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F687F027048448007F3E12 /* ProfileHeader.xib in Resources */,
 				B4BEA72C27033A2A00A26068 /* MainVC.xib in Resources */,
 				B4BEA7212703397500A26068 /* LaunchScreen.storyboard in Resources */,
 				B4BEA71E2703397500A26068 /* Assets.xcassets in Resources */,
@@ -219,8 +242,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F687F22704846F007F3E12 /* ProfileHeader.swift in Sources */,
 				B4BEA7192703397500A26068 /* MainVC.swift in Sources */,
-				B4F687EE27042F43007F3E12 /* Layer+.swift in Sources */,
+				B4F687EE27042F43007F3E12 /* UIView+.swift in Sources */,
 				B4BEA7152703397500A26068 /* AppDelegate.swift in Sources */,
 				B4BEA734270366F100A26068 /* NavigationBarButtons.swift in Sources */,
 				B4BEA73127033D3E00A26068 /* Assets.swift in Sources */,
