@@ -11,6 +11,9 @@ class MainVC: UIViewController {
     
     @IBOutlet private weak var checkOutBtn: UIButton!
     @IBOutlet weak var profileHeader: ProfileHeader!
+    @IBOutlet weak var descriptionLabl: UILabel!
+    var showMoreState:  ShowMoreState = .showMore
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -37,5 +40,24 @@ class MainVC: UIViewController {
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.clipsToBounds = true
     }
- 
+    
+    @IBAction func showMoreBtn(_ sender: UIButton) {
+        descriptionLabl.numberOfLines = descriptionLabl.numberOfLines == 2 ? 0 : 2
+        
+        switch showMoreState {
+        case .showMore:
+            showMoreState = .showLess
+        case .showLess:
+            showMoreState = .showMore
+        }
+        let title = NSAttributedString(string: showMoreState.rawValue, attributes: [.underlineStyle: true])
+        sender.setAttributedTitle(title, for: .normal)
+//        sender.setTitle(showMoreState.rawValue, for: .normal)
+    }
+    
+    enum ShowMoreState: String {
+        case showMore = "Show More"
+        case showLess = "Show Less"
+    }
+    
 }
