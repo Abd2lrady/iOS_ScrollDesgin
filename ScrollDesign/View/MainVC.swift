@@ -8,13 +8,19 @@
 import UIKit
 
 class MainVC: UIViewController {
-
+    
+    @IBOutlet private weak var checkOutBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        configNavBar()
     }
 
-    func configNavBar() {
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        configNavBarUI()
+        checkOutBtn.setCornerRadius = 20
+    }
+   
+    func configNavBarUI() {
         
         let backBtn = UIBarButtonItem.setNavButton(withImg: UIImage(asset: Asset.group))
         let detailBtn = UIBarButtonItem.setNavButton(withImg: UIImage(asset: Asset.group9))
@@ -27,4 +33,5 @@ class MainVC: UIViewController {
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.clipsToBounds = true
     }
+ 
 }
