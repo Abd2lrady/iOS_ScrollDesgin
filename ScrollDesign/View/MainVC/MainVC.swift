@@ -10,8 +10,9 @@ import UIKit
 class MainVC: UIViewController {
     
     @IBOutlet private weak var checkOutBtn: UIButton!
-    @IBOutlet weak var profileHeader: ProfileHeader!
-    @IBOutlet weak var descriptionLabl: UILabel!
+    @IBOutlet private weak var profileHeader: ProfileHeader!
+    @IBOutlet private weak var descriptionLabl: UILabel!
+    @IBOutlet weak var titeDescription: UILabel!
     var showMoreState:  ShowMoreState = .showMore
 
     override func viewDidLoad() {
@@ -24,6 +25,10 @@ class MainVC: UIViewController {
         checkOutBtn.setCornerRadius = 20
         profileHeader.setCorners(with: 20,
                                  corners: [.layerMinXMinYCorner,
+                                           .layerMaxXMinYCorner])
+        titeDescription.setCorners(with: 20,
+
+                                   corners: [.layerMinXMinYCorner,
                                            .layerMaxXMinYCorner])
     }
    
