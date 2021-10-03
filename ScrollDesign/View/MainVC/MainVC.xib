@@ -24,34 +24,34 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="1814"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="saw-o9-r8J">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="saw-o9-r8J">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="1814"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3vI-bS-Pde" userLabel="ContentView">
-                            <rect key="frame" x="0.0" y="-70" width="414" height="1605"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1748"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0_993KBixtI4QLSJOO" translatesAutoresizingMaskIntoConstraints="NO" id="9nk-R1-DFQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="401.5"/>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0_993KBixtI4QLSJOO" translatesAutoresizingMaskIntoConstraints="NO" id="9nk-R1-DFQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="544"/>
                                 </imageView>
                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n2e-0w-qYA" customClass="ProfileHeader" customModule="ScrollDesign" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="393.5" width="414" height="165.5"/>
+                                    <rect key="frame" x="0.0" y="536" width="414" height="166"/>
                                     <color key="backgroundColor" red="0.92549026010000002" green="0.92941176889999999" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="n2e-0w-qYA" secondAttribute="height" multiplier="1:0.4" id="NQh-XI-TB3"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xrY-88-Skr">
-                                    <rect key="frame" x="0.0" y="549" width="414" height="66"/>
+                                    <rect key="frame" x="0.0" y="692" width="414" height="66"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 </view>
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Design mobile application &amp; responsive website and dashboard" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mtf-6O-fld">
-                                    <rect key="frame" x="10" y="564" width="414" height="41"/>
+                                    <rect key="frame" x="10" y="707" width="414" height="41"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Ojz-YL-2si">
-                                    <rect key="frame" x="10" y="615" width="198.5" height="20.5"/>
+                                    <rect key="frame" x="10" y="758" width="198.5" height="20.5"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UI/UX Design" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMY-eF-oSe">
                                             <rect key="frame" x="0.0" y="0.0" width="108" height="20.5"/>
@@ -77,7 +77,7 @@
                                     </subviews>
                                 </stackView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g45-3u-qbC">
-                                    <rect key="frame" x="10" y="645.5" width="414" height="41"/>
+                                    <rect key="frame" x="10" y="788.5" width="414" height="41"/>
                                     <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </string>
@@ -86,7 +86,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yAK-4l-dXv">
-                                    <rect key="frame" x="166" y="696.5" width="82" height="30"/>
+                                    <rect key="frame" x="166" y="839.5" width="82" height="30"/>
                                     <state key="normal">
                                         <attributedString key="attributedTitle">
                                             <fragment content="Show More">
@@ -103,7 +103,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
                                     </connections>
                                 </button>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="opp-EW-4l4">
-                                    <rect key="frame" x="10" y="742.5" width="394" height="862.5"/>
+                                    <rect key="frame" x="10" y="885.5" width="394" height="862.5"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YX0-44-aEl">
                                             <rect key="frame" x="0.0" y="0.0" width="143" height="29.5"/>
@@ -238,7 +238,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
                                     </constraints>
                                 </stackView>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group_10" translatesAutoresizingMaskIntoConstraints="NO" id="U9S-tC-3n6">
-                                    <rect key="frame" x="315" y="752.5" width="84" height="84"/>
+                                    <rect key="frame" x="315" y="895.5" width="84" height="84"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="U9S-tC-3n6" secondAttribute="height" id="kwz-Iv-tJI"/>
                                     </constraints>
@@ -262,7 +262,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
                                 <constraint firstItem="9nk-R1-DFQ" firstAttribute="leading" secondItem="3vI-bS-Pde" secondAttribute="leading" id="Ojt-GU-1XY"/>
                                 <constraint firstAttribute="bottom" secondItem="opp-EW-4l4" secondAttribute="bottom" id="Rjm-be-jIC"/>
                                 <constraint firstItem="Ojz-YL-2si" firstAttribute="top" secondItem="Mtf-6O-fld" secondAttribute="bottom" constant="10" id="UAV-nS-Ugp"/>
-                                <constraint firstItem="9nk-R1-DFQ" firstAttribute="height" secondItem="3vI-bS-Pde" secondAttribute="height" multiplier="0.25" id="VDz-dS-D3s"/>
                                 <constraint firstItem="opp-EW-4l4" firstAttribute="trailing" secondItem="3vI-bS-Pde" secondAttribute="trailing" constant="-10" id="dqV-p7-Z2B"/>
                                 <constraint firstItem="g45-3u-qbC" firstAttribute="leading" secondItem="UMY-eF-oSe" secondAttribute="leading" id="dvc-Zu-JLR"/>
                                 <constraint firstItem="xrY-88-Skr" firstAttribute="top" secondItem="Mtf-6O-fld" secondAttribute="top" constant="-15" id="exD-Ha-4CW"/>
@@ -277,6 +276,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
                         </view>
                     </subviews>
                     <constraints>
+                        <constraint firstItem="3vI-bS-Pde" firstAttribute="top" secondItem="saw-o9-r8J" secondAttribute="top" id="2Bd-yc-ySM"/>
                         <constraint firstItem="3vI-bS-Pde" firstAttribute="trailing" secondItem="AzX-8Z-2UJ" secondAttribute="trailing" id="ANi-fg-zeh"/>
                         <constraint firstItem="3vI-bS-Pde" firstAttribute="leading" secondItem="AzX-8Z-2UJ" secondAttribute="leading" id="y0Q-qy-ZXf"/>
                         <constraint firstItem="3vI-bS-Pde" firstAttribute="width" secondItem="XhG-Qd-Avg" secondAttribute="width" id="ySV-Rk-GHR"/>
@@ -286,10 +286,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
                     <viewLayoutGuide key="frameLayoutGuide" id="XhG-Qd-Avg"/>
                 </scrollView>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ugh-yx-tbI">
-                    <rect key="frame" x="0.0" y="1687" width="414" height="93"/>
+                    <rect key="frame" x="0.0" y="1721" width="414" height="93"/>
                 </view>
                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fC4-9H-g3k">
-                    <rect key="frame" x="52" y="1718" width="310.5" height="62"/>
+                    <rect key="frame" x="52" y="1752" width="310.5" height="62"/>
                     <color key="backgroundColor" red="0.33725491169999999" green="0.066666662690000003" blue="0.84705877299999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="height" secondItem="fC4-9H-g3k" secondAttribute="width" multiplier="1:5" id="IIS-RE-hoF"/>
@@ -304,11 +304,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="saw-o9-r8J" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="BmC-tQ-Eng"/>
+                <constraint firstItem="9nk-R1-DFQ" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.3" id="KVc-nc-l1W"/>
                 <constraint firstItem="Ugh-yx-tbI" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="NdO-j4-K9e"/>
                 <constraint firstItem="Isp-eo-qoN" firstAttribute="height" secondItem="Ugh-yx-tbI" secondAttribute="height" id="OOJ-Z4-88x"/>
-                <constraint firstItem="AzX-8Z-2UJ" firstAttribute="top" secondItem="3vI-bS-Pde" secondAttribute="top" constant="70" id="QzG-DO-Zcz"/>
-                <constraint firstItem="fC4-9H-g3k" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="WXr-HM-BEH"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Ugh-yx-tbI" secondAttribute="bottom" id="WYS-68-Oip"/>
+                <constraint firstItem="fC4-9H-g3k" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="WXr-HM-BEH"/>
+                <constraint firstItem="Ugh-yx-tbI" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="WYS-68-Oip"/>
                 <constraint firstItem="Ugh-yx-tbI" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="ZN7-Ri-08d"/>
                 <constraint firstItem="Ugh-yx-tbI" firstAttribute="height" secondItem="fC4-9H-g3k" secondAttribute="height" multiplier="1.5" id="arO-Ox-3M4"/>
                 <constraint firstItem="fC4-9H-g3k" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hQ4-yO-rgX"/>

@@ -22,8 +22,8 @@ class MainVC: UIViewController {
         super.viewDidLoad()
     }
 
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         configNavBarUI()
         checkOutBtn.setCornerRadius = 20
         profileHeader.setCorners(with: 20,
@@ -83,6 +83,7 @@ class MainVC: UIViewController {
                            color.withAlphaComponent(0.6).cgColor,
                            color.withAlphaComponent(0.8).cgColor,
                            color.withAlphaComponent(1).cgColor]
+        gradient.locations = [0.0, 0.2, 0.4, 0.6, 0.1]
         gradient.frame = checkoutBtnBG.bounds
         checkoutBtnBG.layer.addSublayer(gradient)
     }
