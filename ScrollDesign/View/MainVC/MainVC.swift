@@ -12,8 +12,11 @@ class MainVC: UIViewController {
     @IBOutlet private weak var checkOutBtn: UIButton!
     @IBOutlet private weak var profileHeader: ProfileHeader!
     @IBOutlet private weak var descriptionLabl: UILabel!
-    @IBOutlet weak var titeDescription: UILabel!
-    var showMoreState:  ShowMoreState = .showMore
+    @IBOutlet private weak var titeDescription: UILabel!
+    @IBOutlet private weak var descriptionBackgoundView: UIView!
+    @IBOutlet private weak var checkoutBtnBG: UIView!
+    
+    var showMoreState: ShowMoreState = .showMore
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,10 +29,15 @@ class MainVC: UIViewController {
         profileHeader.setCorners(with: 20,
                                  corners: [.layerMinXMinYCorner,
                                            .layerMaxXMinYCorner])
-        titeDescription.setCorners(with: 20,
-
-                                   corners: [.layerMinXMinYCorner,
-                                           .layerMaxXMinYCorner])
+//        titeDescription.setCorners(with: 20,
+//
+//                                   corners: [.layerMinXMinYCorner,
+//                                           .layerMaxXMinYCorner])
+        descriptionBackgoundView.setCorners(with: 20,
+                                            
+                                            corners: [.layerMinXMinYCorner,
+                                                    .layerMaxXMinYCorner])
+        configCeckoutBG()
     }
    
     func configNavBarUI() {
@@ -63,6 +71,20 @@ class MainVC: UIViewController {
     enum ShowMoreState: String {
         case showMore = "Show More"
         case showLess = "Show Less"
+    }
+    
+    func configCeckoutBG() {
+        let gradient = CAGradientLayer()
+        
+        let color = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        
+        gradient.colors = [color.withAlphaComponent(0.0).cgColor,
+                           color.withAlphaComponent(0.4).cgColor,
+                           color.withAlphaComponent(0.6).cgColor,
+                           color.withAlphaComponent(0.8).cgColor,
+                           color.withAlphaComponent(1).cgColor]
+        gradient.frame = checkoutBtnBG.bounds
+        checkoutBtnBG.layer.addSublayer(gradient)
     }
     
 }
